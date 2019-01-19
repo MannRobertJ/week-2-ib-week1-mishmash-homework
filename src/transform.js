@@ -2,9 +2,7 @@ function groupAdultsByAgeRange(array) {
   // Filters out the underaged.
   const adults = array.filter(person => person.age >= 18);
 
-  if (adults.length === 0) {
-    return {};
-  }
+
 
   // Splits the array into five arrays, one for each age group.
   const under21Array = adults.filter(person => person.age <= 20);
