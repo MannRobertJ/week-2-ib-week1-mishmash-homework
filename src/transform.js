@@ -70,6 +70,5 @@ function groupAdultsByAgeRange(array) {
   }, {});
 }
 
-console.log(object);
 
 module.exports.groupAdultsByAgeRange = groupAdultsByAgeRange;
