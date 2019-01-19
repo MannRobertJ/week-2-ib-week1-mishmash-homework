@@ -19,7 +19,7 @@ function groupAdultsByAgeRange(array) {
   );
   const over50Array = adults.filter(person => 51 <= person.age);
 
-  // Creates an object for each age group. Each object object looks like {under21: [person1, person2]}
+  // Creates an object for each age group. Each object looks like {under21: [person1, person2]}
   const under21 = under21Array.reduce(
     (object, person) => {
       object["20 and younger"].push(person);

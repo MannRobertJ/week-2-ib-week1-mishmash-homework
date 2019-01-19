@@ -11,7 +11,7 @@ function addSomePromises(somePromise) {
 But since the test works I decided to leave it. */
 function promiseToGiveItBackLater(value) {
   return new Promise((resolve, reject) => {
-    giveItBackLater(value, value => resolve(value)); // The promise will wait 100ms then return value, then resolve with value. 
+    giveItBackLater(value, value => resolve(value)); // The promise will wait 100ms then resolve with value. 
   });
 }
 
