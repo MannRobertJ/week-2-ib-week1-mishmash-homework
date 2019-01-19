@@ -1,3 +1,4 @@
+// Everything does exactly as its name suggests.
 class ShoppingCart {
   constructor() {
     this.items = [];

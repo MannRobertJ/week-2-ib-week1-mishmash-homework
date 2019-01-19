@@ -19,7 +19,7 @@ function groupAdultsByAgeRange(array) {
   );
   const over50Array = adults.filter(person => 51 <= person.age);
 
-  // Creates an object for each age group. The object looks like {under21: [person1, person2]}
+  // Creates an object for each age group. Each object object looks like {under21: [person1, person2]}
   const under21 = under21Array.reduce(
     (object, person) => {
       object["20 and younger"].push(person);
@@ -56,10 +56,10 @@ function groupAdultsByAgeRange(array) {
     { "51 and older": [] }
   );
 
-  //Puts all the object into an array, then filters on that array to get rid of empty age groups.
+  //Puts all the objects into an array, then filters on that array to get rid of empty age groups.
   const groupedByAge = [under21, ages21to30, ages31to40, ages41to50, over50];
   const groupedByAgeWithoutEmpties = groupedByAge.filter(group => {
-    const key = Object.keys(group)[0]; // Object.keys() returns an array of all an object's keys.
+    const key = Object.keys(group)[0];  
     return group[key].length > 0;
   });
 
@@ -69,7 +69,5 @@ function groupAdultsByAgeRange(array) {
     return object;
   }, {});
 }
-
-console.log(object);
 
 module.exports.groupAdultsByAgeRange = groupAdultsByAgeRange;
