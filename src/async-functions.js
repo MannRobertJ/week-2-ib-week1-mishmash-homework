@@ -1,3 +1,4 @@
+
 function giveItBackLater(value, callback) {
   setTimeout(() => callback(value), 100);
 }
@@ -15,3 +16,11 @@ function promiseToGiveItBackLater(value) {
 }
 
 module.exports = { giveItBackLater, addSomePromises, promiseToGiveItBackLater };
+=======
+function giveItBackLater(value, callback) {}
+
+function callback(value) {}
+
+function promiseToGiveItBackLater(value) {}
+
+module.exports = { giveItBackLater, callback, promiseToGiveItBackLater };
